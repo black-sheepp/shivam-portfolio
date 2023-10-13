@@ -1,14 +1,15 @@
-import React from 'react'
+import React from "react";
+import Styles from "./Projects.module.css"
 
 const Projects = () => {
-  return (
-    <section className=' p-4 lg:px-28'>
+	return (
+		<section className=' p-4 lg:px-28'>
 			<div>
 				<h1 className='text-yellow text-4xl my-4'>Projects</h1>
 				
 			</div>
 		</section>
-  )
-}
+	);
+};
 
-export default Projects
+export default Projects;

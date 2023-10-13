@@ -27,7 +27,7 @@ const navlinks = [
 
 const Navbar = () => {
 	return (
-		<div className='flex justify-center fixed right-0 left-0 top-0 bg-black lg:justify-between border-b-4 border-b-[#FFDC51] px-10 p-3'>
+		<div className='flex justify-center fixed right-0 left-0 top-0 bg-black z-10 lg:justify-between border-b-4 border-b-[#FFDC51] px-10 p-3'>
 			<Link href={"/"} className='flex cursor-pointer hover:text-pink'>
 				<Logo />
 				<p className='self-center text-2xl ml-4 font-bold'>Shivam&apos;s Portfolio</p>
