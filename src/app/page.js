@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar/>
       <div className='mt-24'>
       <HeadMessage/>
-      {/* <AccountNotify/> */}
+      <AccountNotify/>
       <Skills/>
       <Projects/>
       <AboutMe/>
