@@ -19,10 +19,10 @@ const HeadMessage = () => {
 				</div>
 				<div className='col-span-8 flex flex-col justify-center m-4 lg:mx-4'>
 					<h1 className='text-4xl font-bold mb-5 text-transparent bg-clip-text bg-gradient-to-r from-yellow via-cyan to-pink lg:text-5xl'>
-						Hello 👋, I'm Shivam K Gupta
+						Hello &#x1F44B;, I&apos;m Shivam K Gupta
 					</h1>
 					<p className='text-xl my-3 text-grey'>
-						"I excel in full-stack development with expertise in Express.js, React, MongoDB, and Node.js for building robust web applications."
+						&quot;I excel in full-stack development with expertise in Express.js, React, MongoDB, and Node.js for building robust web applications.&quot;
 					</p>
 					<div className="my-6">
 						<p className="">
