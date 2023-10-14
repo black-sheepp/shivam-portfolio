@@ -29,7 +29,7 @@ const Qualification = () => {
 				<h1 className='text-yellow text-4xl my-4'>Qualification</h1>
 				<div className='grid grid-cols-1 xl:grid-cols-2'>
 					{qualifications.map((qualification, index) => (
-						<div className='flex align-middle ml-0 md:ml-8 my-2'>
+						<div key={index} className='flex align-middle ml-0 md:ml-8 my-2'>
 							<Image
 								src={qualification.thumbnail}
 								width={100}
