@@ -110,7 +110,7 @@ const Skills = () => {
 						<p className='text-pink text-2xl'>Front End</p>
 						{frontEnd.map((title, index) => {
 							return (
-								<div className='pl-4'>
+								<div className='pl-4' key={index}>
 									<p className='text-white text-xl my-2'>
 										{title.skill}
 										{title.certified ? (
@@ -139,7 +139,7 @@ const Skills = () => {
 						<p className='text-pink text-2xl'>Back End</p>
 						{backEnd.map((title, index) => {
 							return (
-								<div className='pl-4'>
+								<div className='pl-4' key={index}>
 									<p className='text-white text-xl my-2'>
 										{title.skill}
 										{title.certified ? (
@@ -168,7 +168,7 @@ const Skills = () => {
 						<p className='text-pink text-2xl'>Other Skills</p>
 						{otherSkills.map((title, index) => {
 							return (
-								<div className='pl-4'>
+								<div className='pl-4' key={index}>
 									<p className='text-white text-xl my-2'>
 										{title.skill}
 										{title.certified ? (
