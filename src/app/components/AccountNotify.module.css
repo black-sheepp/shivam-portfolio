@@ -22,7 +22,7 @@
 .card .social_link2,
 .card .social_link3,
 .card .social_link4,
-.card .social_link5{
+.card .social_link5 {
     position: relative;
     display: flex;
     align-items: center;

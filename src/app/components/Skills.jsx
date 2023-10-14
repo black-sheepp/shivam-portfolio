@@ -1,4 +1,5 @@
 import React from "react";
+import { FcOk, FcReading } from "react-icons/fc";
 
 const frontEnd = [
 	{
@@ -24,7 +25,12 @@ const frontEnd = [
 	{
 		skill: "NextJS",
 		range: "75",
-		certified: true,
+		certified: false,
+	},
+	{
+		skill: "TailwindCSS",
+		range: "75",
+		certified: false,
 	},
 ];
 
@@ -111,14 +117,24 @@ const Skills = () => {
 						{frontEnd.map((title, index) => {
 							return (
 								<div className='pl-4' key={index}>
-									<p className='text-white text-xl my-2'>
-										{title.skill}
+									<div className='flex align-middle'>
+										<p className='text-white text-xl my-2'>{title.skill}</p>
 										{title.certified ? (
-											<small className='text-cyan text-sm ml-4'>Certified</small>
+											<div className="flex mt-4">
+												<FcOk className="ml-3"/>
+												<p className='ml-1 text-cyan text-sm align-middle'>
+													Certified
+												</p>
+											</div>
 										) : (
-											<small className='text-orangeColor text-sm ml-4'>Learning</small>
+											<div className="flex mt-4">
+												<FcReading className="ml-3"/>
+												<p className='ml-1 text-orangeColor text-sm align-middle'>
+													Learning
+												</p>
+											</div>
 										)}
-									</p>
+									</div>
 									<div className='flex w-3/4 h-2 bg-greyDark rounded-full overflow-hidden'>
 										<div
 											className={`flex flex-col justify-center overflow-hidden ${skillMeasures(
@@ -140,14 +156,24 @@ const Skills = () => {
 						{backEnd.map((title, index) => {
 							return (
 								<div className='pl-4' key={index}>
-									<p className='text-white text-xl my-2'>
-										{title.skill}
+									<div className='flex align-middle'>
+										<p className='text-white text-xl my-2'>{title.skill}</p>
 										{title.certified ? (
-											<small className='text-cyan text-sm ml-4'>Certified</small>
+											<div className="flex mt-4">
+												<FcOk className="ml-3"/>
+												<p className='ml-1 text-cyan text-sm align-middle'>
+													Certified
+												</p>
+											</div>
 										) : (
-											<small className='text-orangeColor text-sm ml-4'>Learning</small>
+											<div className="flex mt-4">
+												<FcReading className="ml-3"/>
+												<p className='ml-1 text-orangeColor text-sm align-middle'>
+													Learning
+												</p>
+											</div>
 										)}
-									</p>
+									</div>
 									<div className='flex w-3/4 h-2 bg-greyDark rounded-full overflow-hidden'>
 										<div
 											className={`flex flex-col justify-center overflow-hidden ${skillMeasures(
@@ -169,14 +195,24 @@ const Skills = () => {
 						{otherSkills.map((title, index) => {
 							return (
 								<div className='pl-4' key={index}>
-									<p className='text-white text-xl my-2'>
-										{title.skill}
+									<div className='flex align-middle'>
+										<p className='text-white text-xl my-2'>{title.skill}</p>
 										{title.certified ? (
-											<small className='text-cyan text-sm ml-4'>Certified</small>
+											<div className="flex mt-4">
+												<FcOk className="ml-3"/>
+												<p className='ml-1 text-cyan text-sm align-middle'>
+													Certified
+												</p>
+											</div>
 										) : (
-											<small className='text-orangeColor text-sm ml-4'>Learning</small>
+											<div className="flex mt-4">
+												<FcReading className="ml-3"/>
+												<p className='ml-1 text-orangeColor text-sm align-middle'>
+													Learning
+												</p>
+											</div>
 										)}
-									</p>
+									</div>
 									<div className='flex w-3/4 h-2 bg-greyDark rounded-full overflow-hidden'>
 										<div
 											className={`flex flex-col justify-center overflow-hidden ${skillMeasures(
