@@ -4,21 +4,11 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 
 const ProjectCard = ({ projectName, description, technologies, gitHubRepository, thumbnail }) => {
-	// const defaultImageSrc = "/images/pp.png";
-	// let passImageSrc = "";
-
-	// useEffect(() => {
-	// 	if (thumbnail == "") {
-	// 		passImageSrc = defaultImageSrc;
-	// 	} else {
-	// 		passImageSrc = thumbnail;
-	// 	}
-	// }, []);
 	return (
 		<Link href={gitHubRepository} target='_blank'>
 			<div className='w-11/12 rounded-2xl border-solid border-2 border-white overflow-hidden shadow-lg cursor-pointer'>
 				<Image
-					className='w-full object-cover h-[220px]'
+					className='w-full object-fill h-[220px]'
 					src={thumbnail}
 					alt='Sunset in the mountains'
 					width={"400"}
