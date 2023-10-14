@@ -108,10 +108,10 @@ function skillMeasures(range) {
 
 const Skills = () => {
 	return (
-		<section className=' p-4 lg:px-28'>
+		<section className=' p-4 lg:px-28' id="skills">
 			<div>
 				<h1 className='text-yellow text-4xl my-4'>Skills</h1>
-				<div className='flex flex-col lg:flex-row'>
+				<div className='flex flex-col md:ml-10 lg:flex-row'>
 					<div className='w-3/4 lg:w-1/2 mb-4'>
 						<p className='text-pink text-2xl'>Front End</p>
 						{frontEnd.map((title, index) => {

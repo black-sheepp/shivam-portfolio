@@ -60,7 +60,7 @@ const projects = [
 	{
 		name: "TODO WebApp",
 		description:
-			"user-friendly Todo list app with ReactJS, featuring modular UI components, local storage for data retention, styled CSS with Tailwind, animations, and a reset button for enhanced usability.",
+			"User-friendly Todo list app with ReactJS, featuring modular UI components, local storage for data retention, styled CSS with Tailwind, animations, and a reset button for enhanced usability.",
 		technologies: ["ReactJs", "CSS", "TailwindCSS", "LocalStorage", "AnimateCSS"],
 		gitHubRepository: "https://github.com/black-sheepp/todo-app-reactjs",
 		thumbnail: "https://shivam-nextjs.s3.ap-south-1.amazonaws.com/todo+(1).png",
@@ -77,7 +77,7 @@ const projects = [
 
 const Projects = () => {
 	return (
-		<section className=' p-4 lg:px-28'>
+		<section className=' p-4 lg:px-28' id="projects">
 			<div>
 				<h1 className='text-yellow text-4xl my-4'>Projects</h1>
 				<div className='grid mx-8 xl:grid-cols-3 gap-x-16 gap-y-10 lg:gap-x-4 md:grid-cols-2'>

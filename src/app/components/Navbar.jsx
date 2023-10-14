@@ -4,24 +4,24 @@ import Link from "next/link";
 
 const navlinks = [
 	{
-		title: "Home",
-		path: "/",
+		title: "Qualification",
+		path: "#qualification",
 	},
 	{
 		title: "Skills",
-		path: "/skills",
+		path: "#skills",
 	},
 	{
 		title: "Projects",
-		path: "/projects",
+		path: "#projects",
 	},
 	{
 		title: "About",
-		path: "/about",
+		path: "#about",
 	},
 	{
 		title: "Contact",
-		path: "/contact",
+		path: "#contact",
 	},
 ];
 
@@ -37,7 +37,7 @@ const Navbar = () => {
 					<ul className='flex self-center text-lg'>
 						{navlinks.map((link, index) => (
 							<li key={index} className='mr-10 cursor-pointer hover:text-pink'>
-								<Link href={link.path}> {link.title} </Link>
+								<Link href={link.path}> {link.title}</Link>
 							</li>
 						))}
 					</ul>

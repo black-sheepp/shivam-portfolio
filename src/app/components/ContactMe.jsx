@@ -4,7 +4,7 @@ import AccountNotify from "./AccountNotify";
 
 const ContactMe = () => {
 	return (
-		<section className=' p-4 lg:px-28'>
+		<section className=' p-4 lg:px-28' id="contact">
 			<div className="mb-10">
 				<h1 className='text-yellow text-4xl my-4'>Contact Me</h1>
 				<div className='xl:flex'>
