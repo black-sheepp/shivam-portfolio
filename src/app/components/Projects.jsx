@@ -82,7 +82,7 @@ const Projects = () => {
 				<h1 className='text-yellow text-4xl my-4'>Projects</h1>
 				<div className='grid mx-8 xl:grid-cols-3 gap-x-16 gap-y-10 lg:gap-x-4 md:grid-cols-2'>
 					{projects.map((project, index) => (
-						<ProjectCard
+						<ProjectCard key={index}
 							projectName={project.name}
 							description={project.description}
 							technologies={project.technologies}

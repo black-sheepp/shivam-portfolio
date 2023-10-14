@@ -30,7 +30,7 @@ const ProjectCard = ({ projectName, description, technologies, gitHubRepository,
 				</div>
 				<div className='px-6 pt-1 pb-2'>
 					{technologies.map((tech, index) => (
-						<button className='text-sm bg-[#ccff33] text-black px-3 py-1 rounded-2xl m-1'>
+						<button key={index} className='text-sm bg-[#ccff33] text-black px-3 py-1 rounded-2xl m-1'>
 							{tech}
 						</button>
 					))}
