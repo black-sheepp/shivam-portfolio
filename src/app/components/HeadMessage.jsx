@@ -21,31 +21,37 @@ const HeadMessage = () => {
 					<h1 className='text-4xl font-bold mb-5 text-transparent bg-clip-text bg-gradient-to-r from-yellow via-cyan to-pink lg:text-5xl'>
 						Hello &#x1F44B;, I&apos;m Shivam K Gupta
 					</h1>
-					<p className='text-xl my-3 text-grey'>
-						&quot;I excel in full-stack development with expertise in Express.js, React, MongoDB, and Node.js for building robust web applications.&quot;
+					<p className='text-lg my-3 text-grey'>
+						&quot;I excel in the realm of full-stack development, where my expertise shines in
+						Express.js, &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;React, MongoDB, and Node.js. This combination of
+						technologies empowers me to craft &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;powerful and resilient web
+						applications that meet diverse user demands. With a deep
+						&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;understanding of these tools, I thrive in developing
+						innovative and user-centric solutions &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;that have a
+						significant impact in the digital landscape.&quot;
 					</p>
-					<div className="my-6">
-						<p className="">
+					<div className='my-6'>
+						<p className=''>
 							{" "}
-							<span className="text-3xl">I build </span>{" "}
-							<span className="text-pink">
-							<TypeAnimation
-								sequence={[
-									// Same substring at the start will only be typed out once, initially
-									"UI/UX Design",
-									1000, // wait 1s before replacing "Mice" with "Hamsters"
-									"Front-End Development",
-									1000,
-									"Back-End Development",
-									1000,
-									"Freelance Project",
-									1000,
-								]}
-								wrapper='span'
-								speed={50}
-								style={{ fontSize: "2rem", display: "inline-block" }}
-								repeat={Infinity}
-							/>{" "}
+							<span className='text-3xl'>I build </span>{" "}
+							<span className='text-pink'>
+								<TypeAnimation
+									sequence={[
+										// Same substring at the start will only be typed out once, initially
+										"UI/UX Design",
+										1000, // wait 1s before replacing "Mice" with "Hamsters"
+										"Front-End Development",
+										1000,
+										"Back-End Development",
+										1000,
+										"Freelance Project",
+										1000,
+									]}
+									wrapper='span'
+									speed={50}
+									style={{ fontSize: "2rem", display: "inline-block" }}
+									repeat={Infinity}
+								/>{" "}
 							</span>
 						</p>
 					</div>
