@@ -15,8 +15,8 @@ const ContactMe = () => {
 						</div>
 						<p className='text-pink text-3xl lg:text-6xl font-semibold text-center'>Want to contact me?</p>
 						<p className='text-xl text-white text-center'>
-							Please, use the provided form or send an email to "
-							<small className='text-2xl lg:text-3xl text-cyan'>shivamguptanitw@gmail.com</small>":
+							Please, use the provided form or send an email to &quot;
+							<small className='text-2xl lg:text-3xl text-cyan'>shivamguptanitw@gmail.com</small>&quot;:
 						</p>
 					</div>
 					<div className={Styles.form_container}>
