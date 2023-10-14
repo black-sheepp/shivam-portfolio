@@ -8,7 +8,7 @@ const HeadMessage = () => {
 	return (
 		<section>
 			<div className='grid grid-cols-1 mt-10 lg:grid-cols-12'>
-				<div className='col-span-4 flex justify-center mb-4 mt-4'>
+				<div className='col-span-4 flex justify-center mb-4'>
 					<Image
 						className='w-80 h-80 rounded-[20px] lg:w-120 h-120 '
 						src={"/images/pp.png"}

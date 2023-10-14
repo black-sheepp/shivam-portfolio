@@ -31,7 +31,7 @@ const Navbar = () => {
 			<div className='flex justify-center bg-black lg:justify-between  px-10 p-3'>
 				<Link href={"/"} className='flex cursor-pointer hover:text-pink'>
 					<Logo />
-					<p className='self-center text-2xl ml-4 font-bold'>Shivam&apos;s Portfolio</p>
+					<p className='self-center text-xl lg:text-2xl ml-4 font-bold'>Shivam&apos;s Portfolio</p>
 				</Link>
 				<div className=' hidden lg:flex'>
 					<ul className='flex self-center text-lg'>
