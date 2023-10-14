@@ -191,7 +191,7 @@ const Skills = () => {
 						})}
 					</div>
 					<div className='w-3/4 lg:w-1/2 mb-4'>
-						<p className='text-pink text-2xl'>Other Skills</p>
+						<p className='text-pink text-2xl'>Other</p>
 						{otherSkills.map((title, index) => {
 							return (
 								<div className='pl-4' key={index}>
