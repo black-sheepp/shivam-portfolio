@@ -16,7 +16,7 @@ const ProjectCard = ({ projectName, description, technologies, gitHubRepository,
 			<Link href={gitHubRepository} target='_blank'>
 				<div className='px-6 py-2'>
 					<div className='text-xl mb-2 text-pink'>{projectName}</div>
-					<p className='text-grey text-base hidden lg:flex'>{description}</p>
+					<p className='text-grey text-base hidden text-justify lg:flex'>{description}</p>
 				</div>
 			</Link>
 

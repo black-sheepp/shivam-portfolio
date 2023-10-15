@@ -108,7 +108,7 @@ function skillMeasures(range) {
 
 const Skills = () => {
 	return (
-		<section className=' p-4 lg:px-28' id="skills">
+		<section className=' p-4 lg:px-28' id='skills'>
 			<div>
 				<h1 className='text-yellow text-4xl my-4'>Skills</h1>
 				<div className='flex flex-col md:ml-10 lg:flex-row'>
@@ -120,22 +120,22 @@ const Skills = () => {
 									<div className='flex align-middle'>
 										<p className='text-white text-xl my-2'>{title.skill}</p>
 										{title.certified ? (
-											<div className="flex mt-4">
-												<FcOk className="ml-3"/>
+											<div className='flex mt-4'>
+												<FcOk className='ml-3' />
 												<p className='ml-1 text-cyan text-sm align-middle'>
 													Certified
 												</p>
 											</div>
 										) : (
-											<div className="flex mt-4">
-												<FcReading className="ml-3"/>
+											<div className='flex mt-4'>
+												<FcReading className='ml-3' />
 												<p className='ml-1 text-orangeColor text-sm align-middle'>
 													Learning
 												</p>
 											</div>
 										)}
 									</div>
-									<div className='flex w-3/4 h-2 bg-greyDark rounded-full overflow-hidden'>
+									<div className='flex w-full lg:w-10/12 md:w-8/12 h-2 bg-greyDark rounded-full overflow-hidden'>
 										<div
 											className={`flex flex-col justify-center overflow-hidden ${skillMeasures(
 												title.range
@@ -159,22 +159,22 @@ const Skills = () => {
 									<div className='flex align-middle'>
 										<p className='text-white text-xl my-2'>{title.skill}</p>
 										{title.certified ? (
-											<div className="flex mt-4">
-												<FcOk className="ml-3"/>
+											<div className='flex mt-4'>
+												<FcOk className='ml-3' />
 												<p className='ml-1 text-cyan text-sm align-middle'>
 													Certified
 												</p>
 											</div>
 										) : (
-											<div className="flex mt-4">
-												<FcReading className="ml-3"/>
+											<div className='flex mt-4'>
+												<FcReading className='ml-3' />
 												<p className='ml-1 text-orangeColor text-sm align-middle'>
 													Learning
 												</p>
 											</div>
 										)}
 									</div>
-									<div className='flex w-3/4 h-2 bg-greyDark rounded-full overflow-hidden'>
+									<div className='flex w-full lg:w-10/12 h-2 md:w-8/12 bg-greyDark rounded-full overflow-hidden'>
 										<div
 											className={`flex flex-col justify-center overflow-hidden ${skillMeasures(
 												title.range
@@ -198,22 +198,22 @@ const Skills = () => {
 									<div className='flex align-middle'>
 										<p className='text-white text-xl my-2'>{title.skill}</p>
 										{title.certified ? (
-											<div className="flex mt-4">
-												<FcOk className="ml-3"/>
+											<div className='flex mt-4'>
+												<FcOk className='ml-3' />
 												<p className='ml-1 text-cyan text-sm align-middle'>
 													Certified
 												</p>
 											</div>
 										) : (
-											<div className="flex mt-4">
-												<FcReading className="ml-3"/>
+											<div className='flex mt-4'>
+												<FcReading className='ml-3' />
 												<p className='ml-1 text-orangeColor text-sm align-middle'>
 													Learning
 												</p>
 											</div>
 										)}
 									</div>
-									<div className='flex w-3/4 h-2 bg-greyDark rounded-full overflow-hidden'>
+									<div className='flex w-full lg:w-10/12 md:w-8/12 h-2 bg-greyDark rounded-full overflow-hidden'>
 										<div
 											className={`flex flex-col justify-center overflow-hidden ${skillMeasures(
 												title.range
