@@ -15,7 +15,7 @@ export default function Home() {
 		<main className='flex min-h-screen flex-col bg-[#00000]'>
 			{/* <AlertNoty/> */}
 			<Navbar />
-			<div className='mt-16'>
+			<div className="">
 				<HeadMessage />
 				<Qualification />
 				<Skills />

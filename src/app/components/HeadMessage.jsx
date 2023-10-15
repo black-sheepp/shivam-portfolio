@@ -4,6 +4,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TypeAnimation } from "react-type-animation";
 import AccountNotify from "./AccountNotify";
+import { motion } from "framer-motion";
 
 const headMessage = {
 	message: "Hello 👋🏻, I'm Shivam K Gupta",
@@ -13,8 +14,14 @@ const headMessage = {
 const HeadMessage = () => {
 	return (
 		<section>
-			<div className='flex flex-col justify-center m-4 lg:flex-row'>
-				<div className='mx-16 mt-8 flex justify-center flex-col lg:px-auto'>
+			<motion.div
+			initial={{opacity:0, scale:0.5}}
+			animate={{opacity:1, scale:1}}
+			transition={{duration:1}}
+			className='flex flex-col justify-center m-4 lg:flex-row'>
+				<div
+					
+					className='mx-16 mt-8 flex justify-center flex-col lg:px-auto'>
 					<Image
 						className='w-80 h-80 rounded-[20px] m-auto'
 						src={"/images/pp.png"}
@@ -22,19 +29,17 @@ const HeadMessage = () => {
 						width={"450"}
 						height={"450"}
 					/>
-					<AccountNotify/>
+					<AccountNotify />
 				</div>
 				<div className=' flex flex-col justify-center m-4 xl:mx-8'>
 					<h1 className='text-4xl font-bold mb-5 text-transparent bg-clip-text bg-gradient-to-r from-yellow via-cyan to-pink lg:text-5xl'>
 						{headMessage.message}
 					</h1>
-					<p className='text-lg my-3 text-grey text-justify'>
-						{headMessage.objective}
-					</p>
+					<p className='text-lg my-3 text-grey text-justify'>{headMessage.objective}</p>
 					<div className='my-6'>
 						<p className=''>
 							{" "}
-							<span className='text-3xl'>I build </span>{" "}
+							<span className='text-3xl'>I do </span>{" "}
 							<span className='text-pink'>
 								<TypeAnimation
 									sequence={[
@@ -61,7 +66,7 @@ const HeadMessage = () => {
 						<button className='bg-[#34D3EB] text-black p-2 mr-6 hover:bg-white'>Download CV</button>
 					</div>
 				</div>
-			</div>
+			</motion.div>
 		</section>
 	);
 };

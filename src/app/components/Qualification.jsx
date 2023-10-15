@@ -1,5 +1,6 @@
+import { inView, motion, useInView } from "framer-motion";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 
 const qualifications = [
 	{
@@ -9,13 +10,13 @@ const qualifications = [
 		thumbnail: "https://shivam-nextjs.s3.ap-south-1.amazonaws.com/nitw-logo.jpeg",
 	},
 	{
-		institute: "CodingNinjas",
+		institute: "Coding Ninjas",
 		degree: "Front-End Development",
 		stream: "HTML, CSS, JavaScript, ReactJs",
 		thumbnail: "https://shivam-nextjs.s3.ap-south-1.amazonaws.com/coding-ninjas.avif",
 	},
 	{
-		institute: "CodingNinjas",
+		institute: "Coding Ninjas",
 		degree: "Back-End Development",
 		stream: "NodeJs, ExpressJs, MongoDB",
 		thumbnail: "https://shivam-nextjs.s3.ap-south-1.amazonaws.com/coding-ninjas.avif",
@@ -23,6 +24,8 @@ const qualifications = [
 ];
 
 const Qualification = () => {
+	const ref = useRef(null);
+	const isInView = useInView(ref, {once: true});
 	return (
 		<section className=' p-4 lg:px-28' id="qualification">
 			<div>

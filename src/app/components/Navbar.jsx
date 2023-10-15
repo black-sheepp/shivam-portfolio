@@ -1,6 +1,7 @@
-import React from "react";
 import Logo from "./Logo";
 import Link from "next/link";
+
+
 
 const navlinks = [
 	{
@@ -27,7 +28,7 @@ const navlinks = [
 
 const Navbar = () => {
 	return (
-		<div className='fixed right-0 left-0 top-0 z-10 '>
+		<div className=''>
 			<div className='flex justify-center bg-black lg:justify-between  px-10 p-3'>
 				<Link href={"/"} className='flex cursor-pointer hover:text-pink'>
 					<Logo />
