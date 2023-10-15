@@ -3,7 +3,7 @@ import Styles from "./AccountNotify.module.css"
 import Link from "next/link";
 
 const handle = {
-	insta: "https://www.instagram.com/i.shivamm/?hl=en",
+	insta: "https://www.instagram.com/i.shivamm/",
 	gitHub: "https://github.com/black-sheepp",
 	discord: "https://discord.gg/SSVrPcvT",
 	linkedIn: "https://www.linkedin.com/in/gshivam1/",
