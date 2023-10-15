@@ -38,7 +38,7 @@ const Qualification = () => {
 								className='bg-black rounded-full w-24 h-24 my-auto'
 							/>
 							<div className='flex flex-col justify-center align-middle h-36 md:h-24 ml-6'>
-								<p className='text-xl font-semibold md:text-3xl text-white'>{qualification.institute}</p>
+								<p className='text-xl md:text-2xl text-white'>{qualification.institute}</p>
 								<div className='h-0.5 bg-green my-1'></div>
 								<p className='text-sm md:text-lg text-cyan'>
 									{qualification.stream} | {qualification.degree}

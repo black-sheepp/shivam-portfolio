@@ -3,7 +3,7 @@ import Styles from "./AccountNotify.module.css"
 
 const AccountNotify = () => {
 	return (
-		<section className='p-4 lg:px-28 self-center'>
+		<section className='p-3 self-center'>
 			<div className={Styles.card}>
 				{/* <p>Hey, Explore my Portfolio. Create an Account</p> */}
 				<a className={Styles.social_link1}>

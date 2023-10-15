@@ -3,32 +3,33 @@ import Image from "next/image";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TypeAnimation } from "react-type-animation";
+import AccountNotify from "./AccountNotify";
+
+const headMessage = {
+	message: "Hello 👋🏻, I'm Shivam K Gupta",
+	objective: `"I excel in the realm of full-stack development, where my expertise shines in Express.js, React, MongoDB, and Node.js. This combination of technologies empowers me to craft powerful and resilient web applications that meet diverse user demands. With a deep understanding of these tools, I thrive in developing innovative and user-centric solutions that have a significant impact in the digital landscape."`,
+};
 
 const HeadMessage = () => {
 	return (
 		<section>
-			<div className='grid grid-cols-1 mt-10 lg:grid-cols-12'>
-				<div className='col-span-4 flex justify-center mb-4'>
+			<div className='flex flex-col justify-center m-4 lg:flex-row'>
+				<div className='mx-16 mt-8 flex justify-center flex-col lg:px-auto'>
 					<Image
-						className='w-80 h-80 rounded-[20px] lg:w-120 h-120 '
+						className='w-80 h-80 rounded-[20px] m-auto'
 						src={"/images/pp.png"}
 						alt="Shivam's Porfolio Image"
 						width={"450"}
 						height={"450"}
 					/>
+					<AccountNotify/>
 				</div>
-				<div className='col-span-8 flex flex-col justify-center m-4 lg:mx-4'>
+				<div className=' flex flex-col justify-center m-4 xl:mx-8'>
 					<h1 className='text-4xl font-bold mb-5 text-transparent bg-clip-text bg-gradient-to-r from-yellow via-cyan to-pink lg:text-5xl'>
-						Hello &#x1F44B;, I&apos;m Shivam K Gupta
+						{headMessage.message}
 					</h1>
-					<p className='text-lg my-3 text-grey'>
-						&quot;I excel in the realm of full-stack development, where my expertise shines in
-						Express.js, &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;React, MongoDB, and Node.js. This combination of
-						technologies empowers me to craft &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;powerful and resilient web
-						applications that meet diverse user demands. With a deep
-						&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;understanding of these tools, I thrive in developing
-						innovative and user-centric solutions &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;that have a
-						significant impact in the digital landscape.&quot;
+					<p className='text-lg my-3 text-grey text-justify'>
+						{headMessage.objective}
 					</p>
 					<div className='my-6'>
 						<p className=''>
