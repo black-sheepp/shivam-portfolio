@@ -38,7 +38,7 @@ const Qualification = () => {
 								width={100}
 								height={100}
 								alt='Image'
-								className='bg-black rounded-full w-24 h-24 my-auto'
+								className=' w-24 h-24 my-auto'
 							/>
 							<div className='flex flex-col justify-center align-middle h-36 md:h-24 ml-6'>
 								<p className='text-xl md:text-2xl text-white'>{qualification.institute}</p>
